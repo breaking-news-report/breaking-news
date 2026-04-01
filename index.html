@@ -3,133 +3,83 @@
 <head>
 <meta charset="UTF-8">
 <title>Church Leader Encourages Members to Reevaluate Caffeine Use</title>
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 
-body{
-margin:0;
-font-family: Arial, Helvetica, sans-serif;
-background:#f2f2f2;
+  body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f2f2f2;
 }
 
-/* Top Banner */
-
-.topbar{
-background:#0a1f44;
-color:white;
-padding:14px 20px;
-font-size:22px;
-font-weight:bold;
-}
-
-.nav{
-background:#ffffff;
-border-bottom:1px solid #ddd;
-padding:10px 20px;
-font-size:14px;
-color:#333;
-}
-
-.nav span{
-margin-right:20px;
-cursor:pointer;
-}
-
-/* Layout */
-
-.page{
-max-width:1100px;
-margin:auto;
-display:flex;
-gap:30px;
-padding:20px;
-}
-
-.main{
-flex:3;
-background:white;
-padding:30px;
-box-shadow:0px 2px 6px rgba(0,0,0,0.1);
-}
-
-.sidebar{
-flex:1;
-background:white;
-padding:20px;
-box-shadow:0px 2px 6px rgba(0,0,0,0.1);
+/* Main layout */
+.page {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  gap: 30px;
+  padding: 20px;
 }
 
 /* Article */
-
-.category{
-color:#c40000;
-font-weight:bold;
-font-size:13px;
-letter-spacing:1px;
-}
-
-h1{
-font-size:38px;
-margin-top:10px;
-}
-
-.byline{
-color:#666;
-font-size:14px;
-margin-bottom:20px;
-}
-
-.article p{
-font-size:18px;
-line-height:1.6;
-margin-bottom:22px;
-}
-
-.image{
-width:100%;
-max-height:400px;
-object-fit:cover;
-margin-bottom:20px;
-max-height:400px;
-background:#ddd;
-margin-bottom:20px;
-display:flex;
-align-items:center;
-justify-content:center;
-color:#666;
-font-size:14px;
+.main {
+  flex: 3;
+  background: white;
+  padding: 20px;
 }
 
 /* Sidebar */
-
-.sidebar h3{
-margin-top:0;
-border-bottom:2px solid #c40000;
-padding-bottom:8px;
+.sidebar {
+  flex: 1;
+  background: white;
+  padding: 15px;
 }
 
-.story{
-margin-bottom:18px;
-font-size:15px;
-line-height:1.4;
-cursor:pointer;
+/* Image */
+.image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
 }
 
-.story:hover{
-text-decoration:underline;
+/* Text */
+h1 {
+  font-size: 32px;
 }
 
-/* Footer */
-
-.footer{
-margin-top:40px;
-padding:30px;
-text-align:center;
-font-size:12px;
-color:#777;
+.article p {
+  font-size: 18px;
+  line-height: 1.6;
 }
 
-</style>
+/* 🔥 MOBILE FIX */
+@media (max-width: 768px) {
+
+  .page {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .sidebar {
+    display: none; /* hides sidebar on phone */
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .article p {
+    font-size: 16px;
+  }
+
+  .image {
+    height: 200px;
+  }
+
+  .main {
+    padding: 15px;
+  }
+}
 </head>
 
 <body>
